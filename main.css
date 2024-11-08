@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 #backgroundPage {
     display: flex;
     justify-content: center;
