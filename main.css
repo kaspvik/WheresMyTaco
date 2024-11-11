@@ -2,7 +2,15 @@ body {
     margin: 0;
 }
 
-#backgroundPage {
+#homePage {
+    display: flex;
+    justify-content: center;
+    height: 780px;
+    width: auto;
+}
+
+
+.backgroundPage {
     display: flex;
     justify-content: center;
     height: 740px;
@@ -98,6 +106,7 @@ body {
 
 /* Startpage Button */
 #startButton {
+    cursor: pointer;
     position: relative;
     top: 650px;
     right: 200px;
@@ -105,17 +114,20 @@ body {
 
 /* Introduction Button */
 #introductionButton {
+    cursor: pointer;
     position: relative;
     top: 550px;
 }
 
 /* Table buttons */
 #kitchenButton {
+    cursor: pointer;
     position: relative;
     top: 550px;
 }
 
 #firstAlternativeButton {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -124,6 +136,7 @@ body {
 }
 
 #secondAlternativeButton {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -131,12 +144,14 @@ body {
 }
 
 #onTableButton {
+    cursor: pointer;
     position: relative;
     top: 500px;
     left: 180px;
 }
 
 #crumbsOnTableButton {
+    cursor: pointer;
     position: relative;
     top: 650px;
     right: 250px;
@@ -149,6 +164,7 @@ body {
 /* Start Door Buttons */
 
 #bedroomDoorButton {
+    cursor: pointer;
     background-color: transparent;
     border: transparent;
 
@@ -161,6 +177,7 @@ body {
 }
 
 #livingRoomDoorButton {
+    cursor: pointer;
     background-color: transparent;
     border: transparent;
 
@@ -172,6 +189,7 @@ body {
 }
 
 #closetDoorButton {
+    cursor: pointer;
     background-color: transparent;
     border: transparent;
 
@@ -181,7 +199,8 @@ body {
     right: 45px;
 }
 
-#toiletDoorButton {
+#bathroomDoorButton {
+    cursor: pointer;
     background-color: transparent;
     border: transparent;
 
@@ -193,6 +212,7 @@ body {
 }
 
 #atticDoorButton {
+    cursor: pointer;
     background-color: transparent;
     border: transparent;
 
@@ -203,3 +223,149 @@ body {
 }
 
 /* End Door Buttons */
+
+/* Bedroom */
+
+#closetBedroom {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+
+    padding: 170px 270px;
+    position: relative;
+    left: 450px;
+}
+
+#nachoBag {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+}
+
+#nachoBag img {
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    left: 400px;
+    top: 220px;
+}
+
+/* Livingroom */
+#salsaJar {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+}
+
+#salsaJar img {
+    width: 50px;
+    height: auto;
+
+    position: relative;
+    left: 250px;
+    top: 310px;
+}
+
+/* Bathroom */
+
+#showerCurtain {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+
+    padding: 250px 130px;
+    position: relative;
+    right: 230px;
+    top: 150px;
+}
+
+#theVeggies {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+}
+
+#theVeggies img {
+    width: 100px;
+    height: auto;
+
+    position: relative;
+    right: 200px;
+    top: 400px;
+}
+
+#fluffyPillow {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+}
+
+#fluffyPillow img {
+    width: 120px;
+    height: auto;
+
+    position: relative;
+    right: 230px;
+    top: 400px;
+}
+
+#pileOfTortillas {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+}
+
+#pileOfTortillas img {
+    width: 110px;
+    height: auto;
+
+    position: relative;
+    right: 230px;
+    top: 410px;
+}
+
+#closetDoor {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+
+    padding: 307px 180px;
+    position: relative;
+    left: 10px;
+}
+
+#theNote {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+
+    padding: 40px 40px;
+    position: relative;
+    left: 10px;
+    top: 530px;
+}
+
+#theNoteButton {
+    cursor: pointer;
+    position: relative;
+    top: 650px;
+}
+
+#firstEndingButton {
+    position: relative;
+    right: 10px;
+    top: 550px
+}
+
+#secondEndingButton {
+    position: relative;
+    left: 10px;
+    top: 550px
+}
+
+#backToHomepage {
+    position: relative;
+    top: 650px;
+    left: 500px;
+}
