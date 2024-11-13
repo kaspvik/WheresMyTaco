@@ -118,6 +118,18 @@ function showBedroomBeforeItem() {
     bedroomBeforeItem.style.display = "block";
 }
 
+function showBathroomBeforeItem() {
+    const showOverviewOverAllRooms = document.getElementById("showOverviewOverAllRooms");
+    const showBathroomBeforeItem = document.getElementById("showBathroomBeforeItem");
+
+    bedroomBeforeItem.style.display = "none"
+    bedroomAfterItem.style.display = "none"
+    overviewOverAllRooms.style.display = "none";
+    secondGoBackButton.style.display = "none";
+    livingroomItem.style.display = "none";
+    bathroomBeforeItem.style.display = "block";
+}
+
 // Bedroom
 
 function showBedroomAfterItem() {
@@ -148,4 +160,143 @@ function backTooOverviewOverAllRooms() {
     overviewOverAllRooms.style.display = "block";
 }
 
+
+// The Living Room
+
+function showLivingroomItem() {
+    const showOverviewOverAllRooms = document.getElementById("overviewOverAllRooms");
+    const showLivingroomItem = document.getElementById("livingroomItem");
+
+    bedroomBeforeItem.style.display = "none"
+    bedroomAfterItem.style.display = "none"
+    overviewOverAllRooms.style.display = "none";
+    secondGoBackButton.style.display = "none";
+    livingroomItem.style.display = "block";
+}
+
+function pickUpSalsa() {
+    const showLivingroomItem = document.getElementById("livingroomItem");
+    const pickUpSalsa = document.getElementById("pickUpSalsa");
+
+    livingroomItem.style.display = "block";
+    secondGoBackButton.style.display = "block";
+    salsaJar.style.display = "none";
+}
+
+// The Bathroom
+
+function showBathroomAfterItem() {
+    const showBathroomBeforeItem = document.getElementById("showBathroomBeforeItem");
+    const showBathroomAfterItem = document.getElementById("showBathroomAfterItem");
+
+    bathroomBeforeItem.style.display = "none"
+    overviewOverAllRooms.style.display = "none";
+    thirdGoBackButton.style.display = "none";
+    bathroomAfterItem.style.display = "block"
+}
+
+function pickUpTheVeggies() {
+    const showBathroomAfterItem = document.getElementById("showBathroomAfterItem");
+    const pickUpTheVeggies = document.getElementById("pickUpTheVeggies");
+
+    bathroomAfterItem.style.display = "block";
+    thirdGoBackButton.style.display = "block";
+    theVeggies.style.display = "none";
+}
+
+// The Attic 
+
+function showAtticBeforeItem() {
+    const showAtticBeforeItem = document.getElementById("showAtticBeforeItem");
+    const pickUpThePillow = document.getElementById("pickUpThePillow");
+
+    bedroomAfterItem.style.display = "none"
+    livingroomItem.style.display = "none";
+    bathroomBeforeItem.style.display = "none"
+    bathroomAfterItem.style.display = "none"
+    fluffyPillow.style.display = "block"
+    atticBeforeItem.style.display = "block"
+    overviewOverAllRooms.style.display = "none";
+}
+
+function pickUpThePillow() {
+    const pickUpThePillow = document.getElementById("pickUpThePillow");
+    const showAtticAfterItem = document.getElementById("showAtticAfterItem");
+
+    fluffyPillow.style.display = "none"
+    atticBeforeItem.style.display = "none"
+    fourthGoBackButton.style.display = "none";
+    pileOfTortillas.style.display = "block"
+    atticAfterItem.style.display = "block"
+}
+
+function pickUpPileOfTortillas() {
+    const showAtticAfterItem = document.getElementById("showAtticAfterItem");
+    const pickUpPileOfTortillas = document.getElementById("pickUpPileOfTortillas");
+
+    fluffyPillow.style.display = "none"
+    atticBeforeItem.style.display = "none"
+    pileOfTortillas.style.display = "none"
+    fourthGoBackButton.style.display = "block";
+    atticAfterItem.style.display = "block"
+}
+
+function backTooOverviewOverAllRooms() {
+    const pickUpPileOfTortillas = document.getElementById("pickUpPileOfTortillas");
+    const overviewOverAllRooms = document.getElementById("overviewOverAllRooms");
+
+    pileOfTortillas.style.display = "none";
+    fourthGoBackButton.style.display = "none";
+    overviewOverAllRooms.style.display = "block";
+}
+
+// The closet
+
+function showClosetBeforeItem() {
+    const overviewOverAllRooms = document.getElementById("overviewOverAllRooms");
+    const showClosetBeforeItem = document.getElementById("showClosetBeforeItem");
+
+    overviewOverAllRooms.style.display = "none";
+    closetBeforeItem.style.display = "block";
+}
+
+function showClosetAfterItem() {
+    const showClosetBeforeItem = document.getElementById("showClosetBeforeItem");
+    const showClosetAfterItem = document.getElementById("showClosetAfterItem");
+
+    closetAfterItem.style.display = "block";
+    closetBeforeItem.style.display = "none";
+}
+
+function showTheNote() {
+    const showClosetAfterItem = document.getElementById("showClosetAfterItem");
+    const showTheNote = document.getElementById("showTheNote");
+
+    closetAfterItem.style.display = "none";
+    theNoteInCloset.style.display = "block";
+}
+
+function goToEnding() {
+    const showTheNote = document.getElementById("showTheNote");
+    const goToEnding = document.getElementById("goToEnding");
+
+    theNoteInCloset.style.display = "none";
+    lastScene.style.display = "block";
+}
+
+function backToHomepage() {
+    const goToEnding = document.getElementById("goToEnding");
+    const homePage = document.getElementById("homePage");
+
+    homePage.style.display = "block";
+    lastScene.style.display = "none";
+}
+
+function toThanksForPlaying() {
+    const lastScene = document.getElementById("lastScene");
+    const thanksForPlaying = document.getElementById("thanksForPlaying");
+
+    lastScene.style.display = "none";
+    thanksForPlaying.style.display = "block";
+}
 

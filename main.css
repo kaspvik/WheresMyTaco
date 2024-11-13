@@ -2,6 +2,8 @@ body {
     margin: 0;
 }
 
+
+
 #homePage {
     display: flex;
     justify-content: center;
@@ -9,6 +11,15 @@ body {
     width: auto;
 }
 
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#overviewOverAllRooms {
+    display: flex;
+    justify-content: center;
+}
 
 .backgroundPage {
     display: flex;
@@ -114,6 +125,7 @@ body {
 
 /* Introduction Button */
 #introductionButton {
+    align-items: center;
     cursor: pointer;
     position: relative;
     top: 550px;
@@ -150,6 +162,34 @@ body {
     left: 180px;
 }
 
+#goBackButton {
+    cursor: pointer;
+    position: relative;
+    top: 500px;
+    left: 180px;
+}
+
+#secondGoBackButton {
+    cursor: pointer;
+    position: relative;
+    top: 500px;
+    left: 180px;
+}
+
+#thirdGoBackButton {
+    cursor: pointer;
+    position: relative;
+    top: 500px;
+    left: 180px;
+}
+
+#fourthGoBackButton {
+    cursor: pointer;
+    position: relative;
+    top: 500px;
+    left: 180px;
+}
+
 #crumbsOnTableButton {
     cursor: pointer;
     position: relative;
@@ -178,7 +218,7 @@ body {
 
 #livingRoomDoorButton {
     cursor: pointer;
-    background-color: transparent;
+    background-color: blue;
     border: transparent;
 
     padding: 185px 100px;
@@ -190,7 +230,7 @@ body {
 
 #closetDoorButton {
     cursor: pointer;
-    background-color: transparent;
+    background-color: green;
     border: transparent;
 
     padding: 185px 100px;
@@ -201,7 +241,7 @@ body {
 
 #bathroomDoorButton {
     cursor: pointer;
-    background-color: transparent;
+    background-color: yellow;
     border: transparent;
 
     padding: 185px 100px;
@@ -213,7 +253,7 @@ body {
 
 #atticDoorButton {
     cursor: pointer;
-    background-color: transparent;
+    background-color: pink;
     border: transparent;
 
     padding: 265px 60px;
@@ -295,6 +335,8 @@ body {
     top: 400px;
 }
 
+/* Attic */
+
 #fluffyPillow {
     cursor: pointer;
     background-color: transparent;
@@ -322,7 +364,7 @@ body {
 
     position: relative;
     right: 230px;
-    top: 410px;
+    top: 420px;
 }
 
 #closetDoor {

@@ -7,10 +7,15 @@
     <title>Where´s My Taco?</title>
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Homepage -->
+
     <section>
         <div style="background-image: url(images/1.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="homePage">
@@ -25,11 +30,11 @@
     </section>
 
     <!-- Introduction -->
-    <section>
+    <!-- <section>
         <div style="background-image: url(images/2.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
-            id="firstSceneSmulan" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="introductionButton" class="pushable">
+            id="firstSceneSmulan" class="backgroundPage">
+            <div id="buttonContainer">
+                <button onclick="showSecondSceneSmulan()" id="introductionButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">Hello Smulan!</span>
@@ -38,9 +43,9 @@
         </div>
 
         <div style="background-image: url(images/3.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
-            id="secondSceneSmulan" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="introductionButton" class="pushable">
+            id="secondSceneSmulan" class="backgroundPage">
+            <div id="buttonContainer">
+                <button onclick="showThirdSceneSmulan()" id="introductionButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">Oh no! What can we do?</span>
@@ -49,23 +54,23 @@
         </div>
 
         <div style="background-image: url(images/2.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
-            id="thirdSceneSmulan" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="introductionButton" class="pushable">
+            id="thirdSceneSmulan" class="backgroundPage">
+            <div id="buttonContainer">
+                <button onclick="showInTheKitchen()" id="introductionButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">Lets go!</span>
                 </button>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- In the Kitchen -->
-    <section>
+    <!-- Under the table -->
+    <!-- <section>
         <div style="background-image: url(images/4.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="inTheKitchen" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="kitchenButton" class="pushable">
+            <div id="buttonContainer">
+                <button onclick="showFindTheBowl()" id="kitchenButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">Thanks!</span>
@@ -73,10 +78,10 @@
             </div>
         </div>
 
-        <div style="background-image: url(images/4.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
-            id="findTheBowl" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="kitchenButton" class="pushable">
+        <div style="background-image: url(images/4.png);background-size: cover; background-position: center; background-repeat: no-repeat; display: none;"
+            id="findTheBowl" class="backgroundPage" display: none;>
+            <div id="buttonContainer">
+                <button onclick="showBowlAlternative()" id="kitchenButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">Let´s find it!</span>
@@ -86,13 +91,13 @@
 
         <div style="background-image: url(images/4.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="bowlAlternative" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="firstAlternativeButton" class="pushable">
+            <div id="buttonContainer">
+                <button onclick="showOnTheTable()" id="firstAlternativeButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">look on the table!</span>
                 </button>
-                <button id="secondAlternativeButton" class="pushable">
+                <button onclick="showUnderTheTable()" id="secondAlternativeButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">look under the table!</span>
@@ -100,28 +105,28 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
 
-    <!-- Alternative 2 in the Kitchen -->
-    <section>
+    <!-- On the table -->
+    <!-- <section>
         <div style="background-image: url(images/5.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="underTheTable" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="kitchenButton" class="pushable">
+            <div id="buttonContainer">
+                <button onclick="showBowlAlternative()" id="kitchenButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">go back!</span>
                 </button>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- On the table -->
-    <section>
+    <!-- The Kitchen -->
+    <!-- <section>
         <div style="background-image: url(images/6.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
-            id="onTableFirst" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="onTableButton" class="pushable">
+            id="onTheTable" class="backgroundPage" style="display: none;">
+            <div id="buttonContainer">
+                <button onclick="showOnTableSecond()" id="onTableButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">Nice crib!</span>
@@ -130,9 +135,9 @@
         </div>
 
         <div style="background-image: url(images/6.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
-            id="onTableSecond" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="onTableButton" class="pushable">
+            id="onTheTableSecond" class="backgroundPage" style="display: none;">
+            <div id="buttonContainer">
+                <button onclick="showCrumbsOnTable()" id="onTableButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">Sweet!</span>
@@ -142,8 +147,8 @@
 
         <div style="background-image: url(images/7.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="crumbsOnTable" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="crumbsOnTableButton" class="pushable">
+            <div id="buttonContainer">
+                <button onclick="showOnTableThird()" id="crumbsOnTableButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">Not good enough clearly..</span>
@@ -153,101 +158,107 @@
 
         <div style="background-image: url(images/6.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="onTableThird" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="onTableButton" class="pushable">
+            <div id="buttonContainer">
+                <button onclick="showOverviewOverAllRooms()" id="onTableButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">Purfect!</span>
                 </button>
             </div>
-        </div>
+        </div> -->
 
     </section>
 
     <!-- Overview on all the rooms -->
     <section>
-        <div style="background-image: url(images/8.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
-            id="overviewOverAllRooms" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="bedroomDoorButton"> </button>
+        <!-- <div style="background-image: url(images/8.png); background-size: cover; background-position: center; background-repeat: no-repeat; display: none;"
+            id="overviewOverAllRooms" class="backgroundPage">
+            <div id="buttonContainer">
+                <button onclick="showBedroomBeforeItem()" id="bedroomDoorButton"></button>
+                <button onclick="showLivingroomItem()" id="livingRoomDoorButton"></button>
+                <button onclick="showClosetBeforeItem()" id="closetDoorButton"></button>
+                <button onclick="showBathroomBeforeItem()" id="bathroomDoorButton"></button>
+                <button onclick="showAtticBeforeItem()" id="atticDoorButton"></button>
             </div>
-            <div>
-                <button id="livingRoomDoorButton"> </button>
-            </div>
-            <div>
-                <button id="closetDoorButton"> </button>
-            </div>
-            <div>
-                <button id="bathroomDoorButton"> </button>
-            </div>
-            <div>
-                <button id="atticDoorButton"> </button>
-            </div>
-        </div>
+        </div> -->
     </section>
 
-
-
     <!-- The Bedroom -->
+
     <section>
-        <div style="background-image: url(images/9.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
+        <!-- <div style="background-image: url(images/9.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="bedroomBeforeItem" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="closetBedroom"></button>
+            <div id="buttonContainer">
+                <button onclick="showBedroomAfterItem()" id="closetBedroom"></button>
             </div>
         </div>
 
         <div style="background-image: url(images/10.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="bedroomAfterItem" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="nachoBag">
+            <div id="buttonContainer">
+                <button onclick="pickUpNachoBag()" id="nachoBag">
                     <img src="images/objects/1.png" alt="bag of nachos">
                 </button>
+                <button onclick="backTooOverviewOverAllRooms()" id="goBackButton" class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Go back!</span>
+                </button>
             </div>
-        </div>
+        </div> -->
 
     </section>
 
-    <!-- The Living Room -->
+
     <section>
-        <div style="background-image: url(images/11.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
+        <!-- <div style="background-image: url(images/11.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="livingroomItem" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="salsaJar">
+            <div id="buttonContainer">
+                <button onclick="pickUpSalsa()" id="salsaJar">
                     <img src="images/objects/2.png" alt="Jar of tomato salsa">
                 </button>
+                <button onclick="backTooOverviewOverAllRooms()" id="secondGoBackButton" class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Go back!</span>
+                </button>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- The Bathroom -->
     <section>
 
-        <div style="background-image: url(images/12.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
+        <!-- <div style="background-image: url(images/12.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="bathroomBeforeItem" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="showerCurtain"></button>
+            <div id="buttonContainer">
+                <button onclick="showBathroomAfterItem()" id="showerCurtain"></button>
             </div>
         </div>
 
         <div style="background-image: url(images/13.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="bathroomAfterItem" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="theVeggies">
+            <div id="buttonContainer">
+                <button onclick="pickUpTheVeggies()" id="theVeggies">
                     <img src="images/objects/3.png" alt="A bunch of veggies">
                 </button>
+                <button onclick="backTooOverviewOverAllRooms()" id="thirdGoBackButton" class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Go back!</span>
+                </button>
             </div>
-        </div>
+        </div> -->
 
     </section>
 
     <!-- The Attic -->
     <section>
 
-        <div style="background-image: url(images/14.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
+        <!-- <div style="background-image: url(images/14.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="atticBeforeItem" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="fluffyPillow">
+            <div id="buttonContainer">
+                <button onclick="pickUpThePillow()" id="fluffyPillow">
                     <img src="images/objects/4.png" alt="A pillow">
                 </button>
             </div>
@@ -255,12 +266,17 @@
 
         <div style="background-image: url(images/14.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="atticAfterItem" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="pileOfTortillas">
+            <div id="buttonContainer">
+                <button onclick="pickUpPileOfTortillas()" id="pileOfTortillas">
                     <img src="images/objects/5.png" alt="A bunch of tortillas">
                 </button>
+                <button onclick="backTooOverviewOverAllRooms()" id="fourthGoBackButton" class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Go back!</span>
+                </button>
             </div>
-        </div>
+        </div> -->
 
     </section>
 
@@ -269,15 +285,15 @@
 
         <div style="background-image: url(images/15.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="closetBeforeItem" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="closetDoor"></button>
+            <div id="buttonContainer">
+                <button onclick="showClosetAfterItem()" id="closetDoor"></button>
             </div>
         </div>
 
         <div style="background-image: url(images/16.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="closetAfterItem" class="backgroundPage" style="display: none;">
             <div>
-                <div>
+                <div onclick="showTheNote()" id="buttonContainer">
                     <button id="theNote"></button>
                 </div>
             </div>
@@ -290,8 +306,8 @@
 
         <div style="background-image: url(images/17.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="theNoteInCloset" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="theNoteButton" class="pushable">
+            <div id="buttonContainer">
+                <button onclick="goToEnding()" id="theNoteButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">oh..</span>
@@ -307,13 +323,13 @@
 
         <div style="background-image: url(images/3.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="lastScene" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="firstEndingButton" class="pushable">
+            <div id="buttonContainer">
+                <button onclick="backToHomepage()" id="firstEndingButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">Dont feed Smulan!</span>
                 </button>
-                <button id="secondEndingButton" class="pushable">
+                <button onclick="toThanksForPlaying()" id="secondEndingButton" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">Feed Smulan!</span>
@@ -328,8 +344,8 @@
 
         <div style="background-image: url(images/18.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="thanksForPlaying" class="backgroundPage" style="display: none;">
-            <div>
-                <button id="backToHomepage" class="pushable">
+            <div id="buttonContainer">
+                <button onclick="backToHomepage()" id="backToHomepage" class="pushable">
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">Back to Homepage!</span>
