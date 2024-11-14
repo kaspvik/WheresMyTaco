@@ -1,13 +1,7 @@
-body {
-    margin: 0;
-}
-
-
-
 #homePage {
     display: flex;
     justify-content: center;
-    height: 780px;
+    height: 740px;
     width: auto;
 }
 
