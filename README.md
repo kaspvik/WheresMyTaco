@@ -6,12 +6,14 @@
 **In this project we would create an interactive experience using Javascript. The user must use buttons to get to different rooms to help the character Smulan, to find his taco.**
 
 ### Future ambitions with the project:
-**Although the task was focused on javascript, the project contains html and css. I want to continue with this project to gradually rewrite functions from HTML/Css to Javascript code.**
+**Although the task was focused on javascript, the project contains alot of html and css. I want to continue with this project to gradually rewrite functions from HTML/Css to Javascript code.**
 
-### Bugs to be fixed: 
+### Bugs and functions to be fixed: 
 **From the start page, you can scroll down to other divs. In the future I want these functions to be fixed.**
 
 **When the game ends and you choose to return to the start page, only the background image from the homepage with strange margins is displayed. In the future, I want all features to appear on the home page.**
+
+**I want to make "The closet" locked until ypu find all the items in the other rooms**
 
 ### Message too David:
 **Hej! Som vi sa sist under handledningen så lyckades jag komprimera min JS-kod från 300 rader till några få. Detta gör ju att JS ser väldigt fjutig ut jämfört med min HTML-kod. Nedan bifogar jag den gamla koden som jag jobbade på innan jag hittade den smarta lösningen! Enjoy helping Smulan! Mvh Kasper**
