@@ -3,41 +3,36 @@ window.addEventListener("DOMContentLoaded", main);
 function main() {
     console.log("Start the program")
 }
+// Array för alla rum
+const scenes = ["homePage", "firstSceneSmulan", "secondSceneSmulan", "thirdSceneSmulan", "inTheKitchen", "findTheBowl", "bowlAlternative", "underTheTable", "onTable", "onTableSecond", "crumbsOnTable", "onTableThird", "overviewOverAllRooms", "bedroomBeforeItem", "bedroomAfterItem", "livingroomBeforeItem", "livingroomAfterItem", "bathroomBeforeItem", "bathroomAfterItem", "atticBeforeItem", "atticAfterItem", "closetBeforeItem", "closetAfterItem", "theNoteInCloset", "lastScene", "thanksForPlaying"];
 
-// Array med alla sceners id
-const scenes = ["homePage", "firstSceneSmulan", "secondSceneSmulan", "thirdSceneSmulan", "inTheKitchen", "findTheBowl", "bowlAlternative", "underTheTable", "onTable", "onTableSecond", "crumbsOnTable", "onTableThird", "overviewOverAllRooms", "bedroomBeforeItem", "bedroomAfterItem", "livingroomItem", "bathroomBeforeItem", "bathroomAfterItem", "atticBeforeItem", "atticAfterItem", "closetBeforeItem", "closetAfterItem", "theNoteInCloset", "lastScene", "thanksForPlaying"];
-
-// Funktion som visar önskad scen och döljer alla andra
+// Byta scenfunktion
 function showScene(sceneId) {
     scenes.forEach(id => {
         document.getElementById(id).style.display = (id === sceneId) ? "block" : "none";
     });
 }
 
-// Array som sparar objekt
-const collectedItems = [];
+// Array för att lagra insamlade föremål
+let collectedItems = [];
 
-// Funktion för att plocka upp ett objekt
+// Funktion för att plocka upp föremålet
 function pickUpItem(itemId) {
-
+    // Kontrollera om föremålet redan är samlat
     if (!collectedItems.includes(itemId)) {
+        // Lägg till föremålet i arrayen
         collectedItems.push(itemId);
-        document.getElementById("nachoBag").style.display = "none";
+        console.log(`${itemId} Its now in ypur inventory:`, collectedItems);
+
+        // Dölj föremålet från skärmen
+        const item = document.getElementById(itemId);
+        if (item) {
+            item.style.display = 'none';
+        }
+    } else {
+        console.log(`${itemId} Already collected.`);
     }
 }
-
-
-//Lägga till klick i javascript istället - test
-
-function initializeSceneButtons() {
-    document.getElementById("homePage").addEventListener("click", () => showScene("firstSceneSmulan"));
-}
-
-
-
-
-
-
 
 
 // Startpage and the introduction, gammal kod
