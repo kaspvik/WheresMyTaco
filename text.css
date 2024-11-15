@@ -1,0 +1,54 @@
+.headline {
+    font-family: Pacifico;
+    font-size: 100px;
+
+    color: white;
+    filter: drop-shadow(5px 5px 1px #000000);
+
+    position: relative;
+    right: 160px;
+}
+
+.storytext {
+    font-family: Pacifico;
+    font-size: 60px;
+
+    color: white;
+    filter: drop-shadow(5px 5px 1px #000000);
+    margin: 0px;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+.storytext-overview {
+    font-family: Pacifico;
+    font-size: 60px;
+
+    color: white;
+    filter: drop-shadow(5px 5px 1px #000000);
+    margin: 0px;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    right: 100px;
+}
+
+.storytext-bedroom {
+    font-family: Pacifico;
+    font-size: 60px;
+
+    color: white;
+    filter: drop-shadow(5px 5px 1px #000000);
+    margin: 0px;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    right: 200px;
+}
