@@ -349,7 +349,7 @@
 
 ## Links:
 
-This site was built using [GitHub Pages](https://pages.github.com/).
+This site was built using [GitHub Pages](https://kaspvik.github.io/WheresMyTaco/).
 
 Images and design was built with [Canva](https://www.canva.com/).
 
