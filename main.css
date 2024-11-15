@@ -35,34 +35,6 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.shadow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: hsl(226, 25%, 69%);
-    border-radius: 8px;
-    filter: blur(2px);
-    will-change: transform;
-    transform: translateY(2px);
-    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
-}
-
-.edge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 8px;
-    background: linear-gradient(to right,
-            hsl(248, 39%, 39%) 0%,
-            hsl(248, 39%, 49%) 8%,
-            hsl(248, 39%, 39%) 92%,
-            hsl(248, 39%, 29%) 100%);
-}
-
 .front {
     display: block;
     position: relative;
@@ -114,7 +86,7 @@
     cursor: pointer;
     position: relative;
     top: 650px;
-    right: 200px;
+    right: 650px;
 }
 
 /* Introduction Button */
@@ -129,7 +101,7 @@
 #kitchenButton {
     cursor: pointer;
     position: relative;
-    top: 550px;
+    top: 400px;
 }
 
 #firstAlternativeButton {
@@ -152,43 +124,15 @@
 #onTableButton {
     cursor: pointer;
     position: relative;
-    top: 500px;
-    left: 180px;
-}
-
-#goBackButton {
-    cursor: pointer;
-    position: relative;
-    top: 500px;
-    left: 180px;
-}
-
-#secondGoBackButton {
-    cursor: pointer;
-    position: relative;
-    top: 500px;
-    left: 180px;
-}
-
-#thirdGoBackButton {
-    cursor: pointer;
-    position: relative;
-    top: 500px;
-    left: 180px;
-}
-
-#fourthGoBackButton {
-    cursor: pointer;
-    position: relative;
-    top: 500px;
+    top: 300px;
     left: 180px;
 }
 
 #crumbsOnTableButton {
     cursor: pointer;
     position: relative;
-    top: 650px;
-    right: 250px;
+    top: 400px;
+    right: 350px;
 
 }
 
@@ -203,7 +147,7 @@
     border: transparent;
 
     display: flex;
-    padding: 185px 100px;
+    padding: 145px 100px;
 
     position: relative;
     top: 160px;
@@ -212,7 +156,7 @@
 
 #livingRoomDoorButton {
     cursor: pointer;
-    background-color: blue;
+    background-color: transparent;
     border: transparent;
 
     padding: 185px 100px;
@@ -224,7 +168,7 @@
 
 #closetDoorButton {
     cursor: pointer;
-    background-color: green;
+    background-color: transparent;
     border: transparent;
 
     padding: 185px 100px;
@@ -235,7 +179,7 @@
 
 #bathroomDoorButton {
     cursor: pointer;
-    background-color: yellow;
+    background-color: transparent;
     border: transparent;
 
     padding: 185px 100px;
@@ -247,7 +191,7 @@
 
 #atticDoorButton {
     cursor: pointer;
-    background-color: pink;
+    background-color: transparent;
     border: transparent;
 
     padding: 265px 60px;
@@ -282,7 +226,13 @@
 
     position: relative;
     left: 400px;
-    top: 220px;
+}
+
+#goBackButton {
+    cursor: pointer;
+    position: relative;
+    top: 300px;
+    left: 180px;
 }
 
 /* Livingroom */
@@ -299,6 +249,13 @@
     position: relative;
     left: 250px;
     top: 310px;
+}
+
+#secondGoBackButton {
+    cursor: pointer;
+    position: relative;
+    top: 500px;
+    left: 180px;
 }
 
 /* Bathroom */
@@ -325,8 +282,15 @@
     height: auto;
 
     position: relative;
-    right: 200px;
-    top: 400px;
+    right: 130px;
+    top: 200px;
+}
+
+#thirdGoBackButton {
+    cursor: pointer;
+    position: relative;
+    top: 300px;
+    left: 180px;
 }
 
 /* Attic */
@@ -357,9 +321,19 @@
     height: auto;
 
     position: relative;
-    right: 230px;
-    top: 420px;
+    right: 160px;
+    top: 200px;
 }
+
+#fourthGoBackButton {
+    cursor: pointer;
+    position: relative;
+    top: 400px;
+    left: 180px;
+}
+
+
+/* The Closet */
 
 #closetDoor {
     cursor: pointer;
