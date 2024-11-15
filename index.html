@@ -230,11 +230,12 @@
 
     <!-- The Livingroom -->
     <section>
+
         <div style="background-image: url(images/11.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="livingroomBeforeItem" class="backgroundPage" style="display: none;">
             <div id="buttonContainer">
-                <button onclick="pickUpItem('salsaJar')" id="salsaJar">
-                    <img src="images/objects/2.png" alt="Jar of tomato salsa">
+                <button onclick="showScene('livingroomAfterItem')" id="aBlanket">
+                    <img src="images/objects/6.png" alt="A blanket">
                 </button>
             </div>
         </div>
@@ -242,6 +243,9 @@
         <div style="background-image: url(images/11.png);background-size: cover; background-position: center; background-repeat: no-repeat;"
             id="livingroomAfterItem" class="backgroundPage" style="display: none;">
             <div id="buttonContainer">
+                <button onclick="pickUpItem('salsaJar')" id="salsaJar">
+                    <img src="images/objects/2.png" alt="Jar of tomato salsa">
+                </button>
                 <button onclick="showScene('overviewOverAllRooms')" id="secondGoBackButton" class="pushable">
                     <span class="front">Go back!</span>
                 </button>
@@ -251,6 +255,8 @@
                 </div>
             </div>
         </div>
+
+
     </section>
 
     <!-- The Bathroom -->

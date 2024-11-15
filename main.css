@@ -258,6 +258,7 @@
     left: 180px;
 }
 
+
 /* Bathroom */
 
 #showerCurtain {
@@ -291,6 +292,21 @@
     position: relative;
     top: 300px;
     left: 180px;
+}
+
+#aBlanket {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+}
+
+#aBlanket img {
+    width: 170px;
+    height: auto;
+
+    position: relative;
+    right: 230px;
+    top: 350px;
 }
 
 /* Attic */
