@@ -31,7 +31,6 @@ function pickUpItem(itemId) {
             item.style.display = 'none';
         }
 
-
         showScene('overviewOverAllRooms');
     } else {
         console.log(`${itemId} Already collected.`);
