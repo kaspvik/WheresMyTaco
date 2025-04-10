@@ -13,7 +13,7 @@
 
 **When the game ends and you choose to return to the start page, only the background image from the homepage with strange margins is displayed. In the future, I want all features to appear on the home page.**
 
-**I want to make "The closet" locked until ypu find all the items in the other rooms**
+**I want to make "The closet" locked until you find all the items in the other rooms**
 
 ## Links:
 
