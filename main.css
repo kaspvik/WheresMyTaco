@@ -82,11 +82,19 @@
 
 
 /* Startpage Button */
+
+.headline {
+    text-align: center;
+
+    margin: 0px;
+}
+
 #startButton {
     cursor: pointer;
     position: relative;
-    top: 650px;
-    right: 650px;
+    top: 400px;
+    left: 430px;
+
 }
 
 /* Introduction Button */
@@ -146,12 +154,11 @@
     background-color: transparent;
     border: transparent;
 
-    display: flex;
-    padding: 145px 100px;
 
+    padding: 100px;
     position: relative;
-    top: 160px;
-    right: 150px;
+    top: 55px;
+    right: 155px;
 }
 
 #livingRoomDoorButton {
@@ -159,9 +166,9 @@
     background-color: transparent;
     border: transparent;
 
-    padding: 185px 100px;
+    padding: 100px;
     position: relative;
-    top: 160px;
+    top: 55px;
     right: 126px;
 
 }
@@ -171,10 +178,10 @@
     background-color: transparent;
     border: transparent;
 
-    padding: 185px 100px;
+    padding: 100px;
     position: relative;
-    top: 160px;
-    right: 45px;
+    top: 55px;
+    right: 40px
 }
 
 #bathroomDoorButton {
@@ -182,9 +189,9 @@
     background-color: transparent;
     border: transparent;
 
-    padding: 185px 100px;
+    padding: 100px;
     position: relative;
-    top: 160px;
+    top: 55px;
     left: 42px;
 
 }
@@ -194,7 +201,7 @@
     background-color: transparent;
     border: transparent;
 
-    padding: 265px 60px;
+    padding: 205px 60px;
     position: relative;
     left: 120px;
 
